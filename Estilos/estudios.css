@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans';
+}
+
+body {
+    background-image: url(../Imagenes/Estudios/DYc.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+h1 {
+    font-size: 35pt;
+    color: aliceblue;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 20pt;
+    color: aliceblue;
+    font-family: serif;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 25pt;
+    color: rgb(84, 87, 88);
+    font-family: serif;
+    align-content: center;
+    font-style: italic;
+}
+
+p {
+    font-size: larger;
+    font-family: 'Gothic Medium';
+    justify-content: right;
+    color: aliceblue;
+}
+
+.table {
+    padding: 5%;
+    border: 0;
+    background-color: rgba(5, 7, 12, 0.25);
+}
+
+.table h3 {
+    color: antiquewhite;
+}
+
+nav {
+    max-width: none;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal>li:hover {
+    background-color: dimgray;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: midnightblue;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.boton {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.boton:hover {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.table {
+    padding: 5%;
+    border: 0;
+    background-color: rgba(5, 7, 12, 0.25);
+}
+
+.slider-box {
+    width: 480px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box img {
+    width: 100%;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 30px;
+    }
+
+    .slider-box {
+        width: 100%;
+    }
+
+    .texto {
+        top: 50px;
+        padding: 0;
+    }
+}

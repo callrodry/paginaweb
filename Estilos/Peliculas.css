@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans';
+}
+
+body{
+    background-image: url(../Imagenes/Fondo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+h1 {
+	font-size: 35pt;
+	color:aliceblue;
+    font-style: italic  ;
+}
+h2 {
+	font-size: 20pt;
+	color:aliceblue;
+    font-family:serif;
+}
+li {
+	font-size: 15pt;
+	color:aliceblue;
+    font-family:'Arial Narrow';
+}
+.table{
+    padding: 5%;
+    border: 0;
+    background-color: rgba(5, 7, 12, 0.25);
+}
+nav{
+    max-width: none;
+    margin: auto;
+    background-color:rgba(0, 0, 0, .5);
+    font-size: 20px;
+    margin-top: 50px;
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu-horizontal > li:hover{
+    background-color:dimgray;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color:midnightblue;
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+.boton{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.boton:hover{
+    background-color: rgba(255, 255, 255, .5);
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale-1" />
+    <title>Series</title>
+    <link rel="stylesheet" href="../Estilos/Contacto.css" />
+  </head>
+  <body>
+    <h1 align="center">¡Contactame!</h1>
+    <hr align="center" width="100%" size="5" />
+
+    <nav>
+      <ul class="menu-horizontal">
+        <li>
+          <button class="boton" onclick="location.href='../Index.html'">
+            <img src="../Imagenes/index/smart-home.png" width="50" />
+          </button>
+        </li>
+        <li>
+          <a href="../Paginas Internas/SobreMi.html">Sobre mí</a>
+        </li>
+        <li>
+          <a href="../Paginas Internas/Familia.html">Familia</a>
+        </li>
+        <li>
+            <a href="../Paginas Internas/estudios.html">Estudios</a>
+        </li>
+        <li>
+          <a href="" role="button">Gustos</a>
+          <ul class="menu-vertical">
+            <li><a href="../Paginas Internas/Series.html">Series</a></li>
+            <li><a href="../Paginas Internas/Peliculas.html">Películas</a></li>
+            <li><a href="../Paginas Internas/Juegos.html">Juegos</a></li>
+          </ul>
+        </li>
+        <li>
+            <a href="../Paginas Internas/Contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <form action="https://formsubmit.co/i20222207.19@puebla.tecnm.mx" method="post">
+        <fieldset>
+        <legend align="center">Manda tu información</legend>
+        <table width="56%" cellpadding="2" align="center">
+          <tr>
+            <td width="48%">
+              <label>Escriba su nombre completo: </label>
+              <input type="text" name="nombre_usuario"size="20" maxlength="80"
+              placeholder="..por Apellido" required/>
+            </td>
+            <td width="27%">
+              <label>Escriba su número de celular: </label>
+              <input type="tel" id="tel" name="tel" size="20" maxlength="80" 
+              placeholder="..celular" required/>
+            </td>
+          </tr>
+          <tr>
+            <td width="48%">
+              <label>Escriba su edad: </label>
+              <input
+                type="number" name="nombre_usuario" size="20" maxlength="80" 
+                required/>
+            </td>
+            <td width="27%">
+              <label>Escriba su correo electronico: </label>
+              <input type="email" id="email" name="email" size="20" maxlength="80" 
+              required/>
+            </td>
+          </tr>
+          <tr>
+            <td><br></td>
+            <td><br></td>
+          </tr>
+          <tr>
+            <td>
+              <label>Sexo: </label>
+              <p>
+                <label>
+                  <input type="radio" name="Sexo" value="opción" id="Sexo_0" />
+                  Hombre</label
+                >
+                <br />
+                <label>
+                  <input type="radio" name="Sexo" value="opción" id="Sexo_1" />
+                  Mujer</label
+                >
+                <br />
+                <label>
+                  <input type="radio" name="Sexo" value="opción" id="Sexo_1" />
+                  Prefiero no decir</label
+                >
+              </p>
+            </td>
+
+            <td>
+              <label>Interes en:</label><br />
+              <input name="Interes" type="checkbox" value="" />
+              <label for="textfield">Peliculas </label><br />
+              <input name="Interes" type="checkbox" value="" />
+              <label for="textfield">Series </label><br />
+              <input name="Interes" type="checkbox" value="" />
+              <label for="textfield">Anime </label><br />
+              <input name="Interes" type="checkbox" value="" />
+              <label for="textfield">Libros </label><br />
+              <input name="Interes" type="checkbox" value="" />
+              <label for="textfield">Videojuegos </label><br />
+              <input name="Interes" type="checkbox" value="" />
+              <label for="textfield">Deportes </label><br />
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <p>
+                <label>Estado civil: </label>
+              </p>
+              <p>
+                <label>
+                  <input type="radio" name="Sexo" value="opción" id="Sexo_0" />
+                  Soltero(a)</label
+                >
+                <br />
+                <label>
+                  <input type="radio" name="Sexo" value="opción" id="Sexo_1" />
+                  Casado(a)</label
+                >
+                <br />
+                <label>
+                  <input type="radio" name="Sexo" value="opción" id="Sexo_1" />
+                  Divorciado(a)</label
+                >
+                <br />
+                <label>
+                  <input type="radio" name="Sexo" value="opción" id="Sexo_1" />
+                  Viudo(a)</label
+                >
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td><br></td>
+            <td><br></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label for="textfield">Opine sobre mi página: </label
+              ><br /><textarea name="textfield" id="textfield"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input name="Enviar" type="submit" id="Enviar" value="Enviar" />
+            </td>
+            <td>
+              <input name="Borrar" type="reset" id="Borrar" value="Borrar" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    </fieldset>
+  </body>
+</html>
